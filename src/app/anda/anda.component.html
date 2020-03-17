@@ -1,0 +1,60 @@
+<!-- 
+<div class="create-account">
+    <h2>Create Account</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <form [formGroup]="createAccountForm">
+          <div class="form-group">
+            <select formControlName="country" class="form-control" (change)="onChangeCountry($event.target.value)">
+              <option value="">Select country...</option>
+              <option *ngFor="let country of namedata">{{country.name}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select formControlName="state" class="form-control" (change)="onChangeState($event.target.value)">
+              <option value="">Select state...</option>
+              <option *ngFor="let state of codedata" [value]="state.id">{{state.code}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select formControlName="city" class="form-control">
+              <option value="">Select city...</option>
+              <option *ngFor="let city of statesdata" [value]="city.id">{{city.states}}</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div> -->
+
+<!-- 
+  <table  border="1px" cellspacing="0px" width="100%">
+    <tr>
+        <th>userid</th>
+        <th>id</th>
+        <th>titel</th>
+       
+    </tr>
+    <tr *ngFor="let datas of listdata">
+        <td>{{datas.name}}</td>
+        <td>{{datas.code}}</td>
+        <td>{{datas.states}}</td>
+         <td>{{datas.completed}}</td> -->
+    <!-- </tr>
+</table> --> 
+
+
+<table  border="1px" cellspacing="0px" width="100%">
+  <tr>
+      <th>userid</th>
+      <th>id</th>
+      <th>titel</th>
+      <th>complted</th>
+  </tr>
+  <tr *ngFor="let datas of mydata">
+      <td>{{datas.userId}}</td>
+      <td>{{datas.id}}</td>
+      <td>{{datas.title}}</td>
+      <td>{{datas.completed}}</td>
+  </tr>
+</table>

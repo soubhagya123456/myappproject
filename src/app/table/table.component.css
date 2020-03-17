@@ -1,0 +1,14 @@
+table {
+    width: 270px;
+    background-color: black;  
+  }
+  mat-header-cell{
+      margin-left: 90px;
+  }
+  th,td{
+      color:white;
+  }
+  th{
+      margin-left: 5px;
+  }
+  

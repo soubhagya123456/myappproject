@@ -1,0 +1,9 @@
+<p>pipe works!</p>
+<table border="1px">
+ <tr *ngFor="let data of datapack">
+    <td>{{data.code}}</td>
+    <td>{{data.name | super:data.gender}}</td>
+    <td>{{data.gender}}</td>
+    <td>{{data.phone}}</td>
+ </tr>
+</table>

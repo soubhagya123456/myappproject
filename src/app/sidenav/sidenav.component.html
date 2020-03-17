@@ -1,0 +1,43 @@
+<p>soubahgaya works!</p>
+
+
+<div fxLayout="row">
+    <div fxLayout="column" fxFlex="50%">
+        <mat-drawer-container class="example-container">
+            <mat-drawer mode="side" opened>Drawer content</mat-drawer>
+            <mat-drawer-content>Main content</mat-drawer-content>
+        </mat-drawer-container>
+
+
+
+        <mat-drawer-container class="example-container" autosize>
+            <mat-drawer #drawer class="example-sidenav" mode="side">
+                <p>soubhagya sidenav</p>
+
+                <button (click)="showFiller = !showFiller" mat-raised-button>
+                    Toggle extra text
+                </button>
+            </mat-drawer>
+            </mat-drawer-container>
+
+            <div class="example-sidenav-content">
+                <button type="button" mat-button (click)="drawer.toggle()">
+                    Toggle sidenav
+                </button>
+            </div>
+
+        
+    </div>
+    <div fxLayout="column" fxFlex="20%">
+        <mat-toolbar>
+            <span>My Application</span>
+        </mat-toolbar>
+    </div>
+
+    <div>
+            <button (click)="openDialog()">cccccccc</button>
+    </div>
+    
+   
+</div>
+
